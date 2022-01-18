@@ -1,6 +1,6 @@
-1. Brute force solution:
-## 123
-%%%%%%%%%%%%%%%%%%%%%%
+
+#  Brute force solution:
+```
     def removeElement(self, nums: List[int], val: int) -> int:
         if nums==[]:
             return 0
@@ -15,6 +15,10 @@
                     i+=1
                 k+=1
             return i
-%%%%%%%%%%%%%%%%%%%%%%
+```
 The inefficiency of the brute force solution:  
 many 'unnecessary' elements are updated in each iteration
+
+
+2. Optimized solution
+
