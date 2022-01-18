@@ -17,12 +17,13 @@
             return i
 ```
 The number of elements: n.   The number of the specified elements: m
-* Remove specified elements, keep the left n-m element in place
-* Return the number of elements that are not removed
+* Remove the specified elements, keep the remaining n-m element in place   (a
+* Return the number of elements that are not removed (i.e., n-m).  (b
 ## The inefficiency of the brute force solution:  
 many 'unnecessary' elements are updated in each iteration
 
 ## The insight for a better solution
 
-2. Optimized solution
+
+# 2. Optimized solution
 
