@@ -1,4 +1,4 @@
-#1 WRONG CODE: 
+#1 WRONG CODE (1st attempt): 
 ```
 class Solution:
     def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
@@ -24,4 +24,5 @@ class Solution:
 
         return root
   ```
-        
+  
+  In the 1st attempt, by combining line 9 and 10 would lead to correct results in Leetcode
