@@ -1,0 +1,24 @@
+    #1 WRONG CODE (1st attempt):
+    
+    ```
+    class Solution:
+        def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+            def findheight(node:Optional[TreeNode]):
+                if not node:
+                    return 0
+                return max(findheight(node.left)+1, findheight(node.right)+1)
+        
+            height=findheight(root)
+        
+        
+            def PrintNodeAtLevel(node:Optional[TreeNode],level:int):
+                if level==1:
+                    return node.val
+                if not node:
+                    return None
+            
+                return PrintNodeAtLevel(node.left,level-1)
+        
+            for level in range (1,height+1):
+                return PrintNodeAtLevel(root,level)
+   ```
