@@ -17,3 +17,8 @@
 ```
 
 
+#  2. Thought
+
+
+The function returns 'start', which is the next element of mid (and mid is the last version that is good)
+
