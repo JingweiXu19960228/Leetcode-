@@ -1,7 +1,7 @@
 #1 The process of debugging my code
 
-(1). Get the columns of the nested list
-We can use expression like this:
+(1). To get the columns of the nested list,
+we can use expression like this:
 ```
 for j in range(len(board)):            
      column = [rows[j] for rows in board]
