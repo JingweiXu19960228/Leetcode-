@@ -2,20 +2,24 @@
 
 (1). Get the columns of the nested list
 We can use expression like this:
-
-(2). The use of nested list slicing
-I just realized that expression such as 'array[i:k][j:m]' is wrong
-Only after importing numpy and convert list to array can we use this
-
-
 ```
 for j in range(len(board)):            
      column = [rows[j] for rows in board]
 ```
 
 
+(2). The use of nested list slicing
+I just realized that expression such as 'array[i:j][m:n]' is wrong
+Only after importing numpy and convert list to array can we use this
 
 ```
 for n in range(3):
-     sub_box=[array[3*n:3*n+3] for array in board[3*m:3*m+3]]
+     sub_box=[array[i:j] for array in board[m:n]]
 ```
+
+
+
+
+
+
+
