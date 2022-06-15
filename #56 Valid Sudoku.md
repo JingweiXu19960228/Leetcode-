@@ -12,3 +12,10 @@ Only after importing numpy and convert list to array can we use this
 for j in range(len(board)):            
      column = [rows[j] for rows in board]
 ```
+
+
+
+```
+for n in range(3):
+     sub_box=[array[3*n:3*n+3] for array in board[3*m:3*m+3]]
+```
