@@ -16,9 +16,9 @@ class Solution:
         
  #2 Thoughts:
  
-(1). The 'if' statement guarantees that x is the smallest number in this subsequence //
+(1). The 'if' statement guarantees that x is the smallest number in this subsequence 
 
-(2). Consider the basic case, x cannot form a consecutive sequence with other elements (i.e., x-1, x+1 are not in nums) //
+(2). Consider the basic case, x cannot form a consecutive sequence with other elements (i.e., x-1, x+1 are not in nums) 
 
 Then the 'while' statement would not be executed, so y-x in this round would be 1
 
