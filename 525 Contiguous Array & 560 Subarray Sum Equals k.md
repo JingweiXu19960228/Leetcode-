@@ -1,4 +1,4 @@
-#1 Right code (from online source):
+#1 Right code for #525 (from online source):
  ```
  class Solution:
     def findMaxLength(self, nums: List[int]) -> int:
@@ -30,7 +30,7 @@
  (3) In the code, if a sum has appeared, then the else statement won't be executed (instead, if statement would be). This guarantees (2)
  
  
- Comare with the solution for #560
+ #3  Comare with the right code for #560
  ```
  class Solution:
     def subarraySum(self, nums: List[int], k: int) -> int:
@@ -45,3 +45,9 @@
             d[summation]+=1
         return res
   ```
+
+ #4 Thoughts
+ 
+ (1). In #560, the keys are still summation, but the values are the total times that a sum has appeared.
+ 
+ (2). d[summation]+=1 is recorded everytime in the for loop, independent of the if statement
