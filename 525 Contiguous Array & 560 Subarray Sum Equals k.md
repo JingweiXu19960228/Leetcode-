@@ -28,3 +28,20 @@
  (2). Then I realize that it is only necessary to store the location that an accumulative sum FIRST APPEARS.
  
  (3) In the code, if a sum has appeared, then the else statement won't be executed (instead, if statement would be). This guarantees (2)
+ 
+ 
+ Comare with the solution for #560
+ ```
+ class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        d=collections.defaultdict(int)
+        summation=0
+        res=0
+        d[0]=1
+        for i in range(len(nums)):
+            summation += nums[i]
+            if summation-k in d:
+                res+=d[summation-k]
+            d[summation]+=1
+        return res
+  ```
