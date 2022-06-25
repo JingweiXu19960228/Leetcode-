@@ -19,7 +19,8 @@
                 d[summation] = i
 
         return res 
-        
+  ```
+  
  #2 Thoughts
  (1). In the beginning, I tried to store ALL the locations corresponding to a accumulative sum, then the values would be a list (Python does not support it because it is mutable). 
  (2). Then I realize that it is only necessary to store the location that an accumulative sum FIRST APPEARS
