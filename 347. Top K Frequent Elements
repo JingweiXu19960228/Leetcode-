@@ -1,0 +1,25 @@
+1. Right code
+```
+class Solution:
+    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        d=collections.Counter(nums)
+        
+        d=d.items()
+        
+        d_sorted=sorted(d, key = lambda x:x[1],reverse=True)
+        i=0
+        res=[]
+        for element,freq in d_sorted:
+            res.append(element)
+            i+=1
+            if i==k:
+                return res
+                
+```
+
+
+
+2. Thoughts:
+
+(1). The usage of functino 'sorted' in python, and how to use key lambda
+(2). The 'item' methods in collections 
