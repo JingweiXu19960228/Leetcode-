@@ -1,3 +1,5 @@
+1. Wrong code
+```
 class Solution:
     def minPathSum(self, grid: List[List[int]]) -> int:
         
@@ -17,4 +19,5 @@ class Solution:
             return min(helper(m,n-1,grid), helper(m-1,n,grid)) + grid[m-1][n-1]
         
         return helper(len(grid),len(grid[0]),grid)
-    
+    ```
+This result is without memorization (lru_cache)
