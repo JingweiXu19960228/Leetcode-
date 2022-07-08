@@ -1,0 +1,20 @@
+class Solution:
+    def minPathSum(self, grid: List[List[int]]) -> int:
+        
+        def helper(m:int, n: int, grid:List[List[int]]) -> int:
+            sums=0
+            if m==1:
+                for i in range(n):
+                    sums+=grid[0][i]
+                return sums
+            sums=0
+            
+            if n==1:
+                for i in range(m):
+                    sums+=grid[i][0]
+                return sums
+            
+            return min(helper(m,n-1,grid), helper(m-1,n,grid)) + grid[m-1][n-1]
+        
+        return helper(len(grid),len(grid[0]),grid)
+    
