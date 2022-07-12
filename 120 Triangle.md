@@ -1,6 +1,6 @@
 1. Wrong code
 
-
+```
 class Solution:
     def minimumTotal(self, triangle: List[List[int]]) -> int:
         
@@ -23,6 +23,11 @@ class Solution:
         height =  len(triangle[-1])
        
         return helper(height-1,triangle)[0]
-                
+ ```
+ 
+ This solution is wrong because it uses Greedy approach from top to bottom, however, it does not satisfy Greedy choice property
+ An example: [1.[1,2],[5,5,1]]. The shortest path would be 1 - 2 - 1. However, it would choose 1 - 1 in the beginning
+ 
+ 
            
         
