@@ -25,12 +25,12 @@ class Solution:
         return helper(height-1,triangle)[0]
  ```
  
- This solution is wrong because it uses Greedy approach from top to bottom, however, it does not satisfy Greedy choice property. 
+This solution is wrong because it uses Greedy approach from top to bottom, however, it does not satisfy Greedy choice property. 
  
 
- An example: [1.[1,2],[5,5,1]]. The shortest path would be 1 - 2 - 1. However, it would choose 1 - 1 in the beginning
+An example: [1.[1,2],[5,5,1]]. The shortest path would be 1 - 2 - 1. However, it would choose 1 - 1 in the beginning.
  
- However, from top to a point in the bottom would have sub-optimal structure. So there is the following solution
+However, from top to a point in the bottom would have sub-optimal structure. So there is the following solution. Notice that the elements in the 'boundary' of the triangle need to be treated separately (see the 1st for loop)
  
  
  2. Right code
