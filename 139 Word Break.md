@@ -22,6 +22,7 @@ class Solution:
                 
         return status
 ```
+Not sure if this code is correct or not. At least, it exceeds time limit in Leetcode. I myself falied to figure out how to store previous values.
 
 2. Right code:
 
