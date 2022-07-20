@@ -1,0 +1,25 @@
+class Solution:
+    def canPartition(self, nums: List[int]) -> bool:
+        N = len(nums)
+        summation = sum(nums)
+        if (summation % 2) !=0:
+            return False
+        
+        if len(nums) ==1:
+            return False
+        
+        target = summation // 2
+        
+        dp = [[False for j in range(target+1)] for i in range(N+1)]
+        
+        for i in range(N+1):
+            dp[i][0] = True
+        
+        for i in range(1,N+1):
+            for j in range(target+1):
+                if j>=nums[i-1]:
+                    dp[i][j] = dp[i-1][j] or dp[i-1][j-nums[i-1]]
+                else:
+                    dp[i][j] = dp[i-1][j]
+        
+        return dp[N][target]
