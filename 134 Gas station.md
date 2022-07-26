@@ -22,6 +22,7 @@ class Solution:
 
 
 2. Thoughts:
+3. 
 (1). It should be noticed that the two statements  "The route can be finished"  and "tot>=0" is equivalent to each other
 
 
