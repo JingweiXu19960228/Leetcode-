@@ -26,5 +26,7 @@ class Solution:
 
 
 (2) Be careful about 'cur' and 'tot'. 'cur' needs to be updated whenever it is smaller than 0. So the final index 'i+1' corresponds to the last i that
-cur<0. From i+1 to n, it is obvious that the route can be continued, because for every j in [i+1,N], gas[j]-cost[j]>0, otherwise cur will be updated again
-And then from 1 to i, the route can be finished, otherwise tot>=0 will not be satisfied
+cur<0. Now let us demonstrate two things (2a). The route can be continued from i+1 to l. (2b). The rest of the route (1 to i) can also be finished //
+
+2(a). From i+1 to n, it is obvious that the route can be continued, because for every j in [i+1,N], gas[j]-cost[j]>0, otherwise cur will be updated again
+2(b). From 1 to i, the route can be finished, otherwise tot>=0 will not be satisfied
