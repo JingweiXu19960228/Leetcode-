@@ -18,5 +18,6 @@ class Solution:
         
         
 2. Thoughts
+
 A palindrome (s[0:i+1]) + Sub-problem (s[i+1: end]) =. Whole-problem 
 
