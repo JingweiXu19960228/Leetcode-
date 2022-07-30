@@ -1,5 +1,6 @@
 1. Right code
 
+```
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         first = float('inf')
@@ -12,6 +13,7 @@ class Solution:
             else:
                 return True
         return False
+ ```
         
         
 2. Thoughts
