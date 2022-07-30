@@ -21,5 +21,6 @@ class Solution:
 (2). This code looks easy, but very hard to understand. There is a good explanation in the youtube video (https://www.youtube.com/watch?v=41gyzVIx-ds)
 Please go to at around 5min
 
-(3). Notice that the if else statement is '<=' rather than '<'
+(3). Notice that the if else statement is '<=' rather than '<'. It would be easy to understand if we consider an array with all same numbers, for e.g [1,1,1,1,1]
+Using '<' instead of '<=' would return True. However, it should return False for this array.
 
