@@ -1,0 +1,20 @@
+1. Wrong code
+
+class Solution:
+    def findMinArrowShots(self, points: List[List[int]]) -> int:
+        points_sorted = sorted(points, key=lambda x:(x[0],x[1]))
+        length = len(points)
+        if length == 1:
+            return 1
+        count = 0
+            
+        j = 0
+        k = 1 
+        while (j < length-1 and k < length-1):
+            k = j+1
+            if k <= length-1:
+                while points_sorted[k][0]< points_sorted[j][1]:
+                    k+= 1   
+                count+= 1    
+            j = k
+        return count
