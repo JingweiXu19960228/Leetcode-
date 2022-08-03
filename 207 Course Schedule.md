@@ -36,7 +36,7 @@ class Solution:
  
  (3). Line 5 is necessary, otherwise the time limit will be reached 
  
- (4）. Take some concrete examples, like [[0,1],[1,0]]
+ (4）. Think about some concrete examples, like [[0,1],[1,0]]
  
  (5). Notice the line 'visted.remove(crs)'. This line would be executed only when in the for loop, all the dfs(pre) is True (i.e, all nodes starting from current crs can be finished)
  
