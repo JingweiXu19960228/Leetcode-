@@ -32,13 +32,15 @@ class Solution:
  
  (1). I changed from line 1 to line 2, but still does not work
  
- (2). It turns out that line 3 should be in the position of line 4. But I don't know why
+ (2). It turns out that line 3 should be in the position of line 4. But I don't know why (after making this change, the code works)
  
  (3). Line 5 is necessary, otherwise the time limit will be reached 
  
  (4）. Think about some concrete examples, like [[0,1],[1,0]]
  
  (5). Notice the line 'visted.remove(crs)'. This line would be executed only when in the for loop, all the dfs(pre) is True (i.e, all nodes starting from current crs can be finished)
+ 
+ (6).
  
  
  
