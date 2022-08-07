@@ -1,4 +1,5 @@
 1. Right code
+```
 class Solution:
     def findRedundantConnection(self, edges: List[List[int]]) -> List[int]:
         
@@ -20,6 +21,7 @@ class Solution:
             
             graph[v].add(u)
             graph[u].add(v)
+```
             
         
 2. Thoughts
