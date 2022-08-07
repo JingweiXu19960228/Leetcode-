@@ -1,5 +1,5 @@
 1. Wrong code
-2. 
+
 class Solution:
     def numSquares(self, n: int) -> int:
         
