@@ -1,0 +1,21 @@
+1. Wrong code
+
+    def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:
+        
+        def dfs(node,graph,visited):
+            if node in visited:
+                return False
+            visited.add(node)
+            for neighbor in graph[node]:
+                if not dfs(neighbor,graph,visited):
+                    return False
+            return True
+        
+        res = set()
+        
+        for i in range(len(graph)):
+
+            if dfs(i,graph,set()):
+                res.add(i)
+        
+        return res
