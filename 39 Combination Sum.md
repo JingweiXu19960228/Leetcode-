@@ -1,5 +1,5 @@
 1. Right code
-
+```
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
         def dfs(nums,target,index,path,res):
@@ -15,7 +15,7 @@ class Solution:
         candidates.sort()
         dfs(candidates,target,0,[],res)
         return res
-        
+```        
 2. Thoughts
 
 (1). It is still hard for me to understand the purpose of sorting (line 15), and the for loop in the dfs function (line 12-13)
