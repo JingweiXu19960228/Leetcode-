@@ -1,5 +1,5 @@
 1. Right code
-
+```
 class Solution:
     def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
         def dfs(nums,target,index,path,res):
@@ -18,7 +18,8 @@ class Solution:
         dfs(candidates,target,0,[],res)
             
         return res
-        
+ ```
+ 
  2. Thoughts
  
  (1). Plase not thtat, when call the dfs recursively (line 14), the index is i+1
