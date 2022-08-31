@@ -1,5 +1,5 @@
 1. Right code
-
+```
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         """ Do not return anything, modify nums in-place instead. """
@@ -14,11 +14,12 @@ class Solution:
         rev(nums, 0, n - 1)
         rev(nums, 0, k - 1)
         rev(nums, k, n - 1)
+``` 
         
         
         
 2. My code (should be right, too)
-
+```
 class Solution:
     def rotate(self, nums: List[int], k: int) -> None:
         """
@@ -30,3 +31,7 @@ class Solution:
 
         ind = len(nums) - k
         print(reverse(reverse(nums[:ind])+reverse(nums[ind:])))
+```
+
+3. Thoughts
+(1). In the online solution, two pointer is used when reversing the array (luckily, Python has built-in ,ethod for reversing array) 
