@@ -1,6 +1,6 @@
 1. Right code
 
-
+```
 class Solution:
     def minOperations(self, nums: List[int], x: int) -> int:
         
@@ -26,3 +26,13 @@ class Solution:
             return -1
         else:
             return len(nums) - maximum
+ ```
+ 
+ 
+ 2. Thoughts
+ 
+ (1). This problem is equivalent to find the maximum subarray so that the sum is target = sum(nums) - x
+ 
+ (2). Notice that target can be smaller than or equal to 0. Only when it is larger than 0 then it makes sense
+ 
+ 
