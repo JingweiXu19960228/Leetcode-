@@ -1,3 +1,7 @@
+    1. Right code
+
+
+    ```
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         def merge(list1,list2):
             dummy_head = tail = ListNode()
@@ -26,3 +30,5 @@
             l1 = self.sort(head)
             l2 = self.sort(slow)
             return self.merge(l1,l2)
+       
+        ```
