@@ -32,3 +32,8 @@
             return self.merge(l1,l2)
        
         ```
+        
+        2. Thoughts:
+        (1).  Line 29 is important. So that the last half of node 'head' is cleared. Notice that it would be wrong if 
+        'slow.next = None', because in Line 27, we have 'slow = slow.next'
+        
