@@ -25,7 +25,11 @@ class Solution:
 2. Thought
 
 (1). In line 8, the condition for while loop is NOT correct, and in the right code, if slow == fast, the loop should break immediately 
- (line 37 in the right code)
+ (line 41 in the right code)
+ 
+(2). I don't know why the while loop is not right. Maybe just remember
+
+(3). I also don't understand why we also need 'while fast ' (line 41)
 
 4. Right code:
 ```
