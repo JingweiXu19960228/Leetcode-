@@ -16,3 +16,8 @@ class Solution:
         height(root)
         return res
 ```
+
+
+2. Right code
+
+
