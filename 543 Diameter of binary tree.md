@@ -38,6 +38,7 @@ res = 0
 ```
 
 3. Thoughts
+
 (1). I don't understand the varialbe res, why it is defined outside the function height
 (2). In the right code, r and l is first calculated, otherwise the time limit would be exceeded. I don't know why
 
