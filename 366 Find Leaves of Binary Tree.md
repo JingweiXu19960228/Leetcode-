@@ -28,5 +28,7 @@ class Solution:
 2. Thoughts:
 
 (1). Think about the example https://leetcode.com/problems/find-leaves-of-binary-tree/
+
 Go through the code line by line to see how node 4,5,3 (leaves) are added at res[depth = 0]
+
 Then think about how node 2 is added at res[depth = 1]
