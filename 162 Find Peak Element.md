@@ -1,5 +1,6 @@
 1. Right code
 
+```
 class Solution:
     def findPeakElement(self, nums: List[int]) -> int:       
         left = 0
@@ -15,7 +16,7 @@ class Solution:
                 left = mid+1
                 
         return left
-    
+ ```   
     
  2. Thought
  (1). The problem is equivalent to 'finding the first element in the array so that it is larger than its next'
