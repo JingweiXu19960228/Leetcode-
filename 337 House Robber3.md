@@ -1,4 +1,5 @@
     1. Wrong code (time limit exceeded, but passed initial test)
+    ```
     def rob(self, root: Optional[TreeNode]) -> int:
         
         if not root:
@@ -14,4 +15,4 @@
         rob2 = self.rob(root.left)+self.rob(root.right)
         
         return max(rob1,rob2)
-        
+     ```
