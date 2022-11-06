@@ -1,5 +1,5 @@
 1. Right code (20221106, 2nd)
-
+```
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:        
         height = len(matrix)
@@ -23,7 +23,8 @@ class Solution:
             if matrix[row-1][column]==target:
                 return True
         return False
-        
+  ```
+  
   2. Thoughts
   (1). 'row' is the smallest value so that matrix[row][0]>target, so it merans that matrix[row-1][0]<=target
   So if there is a solution, it has to be in the row-1
