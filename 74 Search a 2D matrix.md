@@ -26,5 +26,6 @@ class Solution:
   ```
   
   2. Thoughts
-  (1). 'row' is the smallest value so that matrix[row][0]>target, so it merans that matrix[row-1][0]<=target
+  (1). 'row' is the smallest value so that matrix[row][0]>target, so it merans that matrix[row-1][0]<=target.
+  
   So if there is a solution, it has to be in the row-1
