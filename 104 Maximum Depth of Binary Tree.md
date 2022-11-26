@@ -1,6 +1,6 @@
 1. Right code
 
-
+```
 class Solution:
     def maxDepth(self, root: Optional[TreeNode]) -> int:
 
@@ -20,7 +20,7 @@ class Solution:
             depth+=1
             
         return depth-1
- 
+ ```
  
  
  2. Thoughts
