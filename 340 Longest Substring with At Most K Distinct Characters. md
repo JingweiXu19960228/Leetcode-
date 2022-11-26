@@ -1,5 +1,6 @@
 1. Right code
 
+```
 class Solution:
     def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
         
@@ -24,7 +25,8 @@ class Solution:
             res = max(res, right-left)
         
         return res
-        
+ ```
+ 
  2. Thoughts
  
  (1). The key is to find which index should the left pointer move to ('ind+1' in the code)
