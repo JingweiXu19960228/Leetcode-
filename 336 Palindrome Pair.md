@@ -41,3 +41,5 @@ class Solution:
  2. Thoughts
  (1). The key is to understand the three ways to form a palindrome
  (2). Some details: line 16 and 23, need to check if word exists
+ In line 16, because empty string itself is palindrome, so needs to be excluded
+ In line 23, it can save time
