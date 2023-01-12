@@ -1,5 +1,5 @@
 1. Right code
-
+ ```
 class Solution:
     def numDecodings(self, s: str) -> int:
         dp = [0]*(len(s)+1)
@@ -10,6 +10,7 @@ class Solution:
             if i!=1 and s[i-2:i]>'09' and s[i-2:i]<'27':
                 dp[i]+=dp[i-2]
         return dp[-1]
+ ```
         
         
 2. Thought
