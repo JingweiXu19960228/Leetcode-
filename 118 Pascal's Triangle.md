@@ -1,5 +1,5 @@
 1. Wrong code
-
+ ```
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:
         def helper(k):
@@ -17,7 +17,7 @@ class Solution:
 
             return helper(k-1).append(newRow)
         return helper(numRows)
-                
+```                
 
 2. Right code
 class Solution:
@@ -31,7 +31,7 @@ class Solution:
                 row[j] = t[n-1][j-1] + t[n-1][j]           
             t.append(row)
         return t
-            
+ ```            
 
 3. Thoughts
 (1). I have no idea why my origina code cannot work. The error says  line 9 returns NoneType ('lastTriangle')
