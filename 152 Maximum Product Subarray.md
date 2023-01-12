@@ -1,5 +1,5 @@
 1.Wrong code
-
+ ```
 class Solution:
     def maxProduct(self, nums: List[int]) -> int:
         dp_pos = [1]*len(nums)
@@ -16,5 +16,7 @@ class Solution:
             dp[i] = max(dp_pos(i),dp_neg(i))
             max_product = max(max_product,dp[i])
         
-        return max_product
+        return max_product 
+```
+
         
