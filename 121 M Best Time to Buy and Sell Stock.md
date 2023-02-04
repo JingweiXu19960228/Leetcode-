@@ -1,5 +1,15 @@
 1. Right code
 
+class Solution:
+    def maxProfit(self, prices: List[int]) -> int:
+        low = 1000000
+        profit = -100000
+        for price in prices:
+            low= min(low,price)
+            profit = max(price - low, profit)
+        return profit
+            
+
 
 
 
