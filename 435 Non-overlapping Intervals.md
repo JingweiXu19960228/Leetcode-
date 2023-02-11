@@ -16,7 +16,7 @@ class Solution:
 ```     
 
 2. Thoughts
-3. 
+
 (1). Notice the extraodinary similarity of this problem to 452.  Minimum Number of Arrows to Burst Balloons.
 
 These two problems are kind of 'reversed'
