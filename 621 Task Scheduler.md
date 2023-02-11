@@ -13,7 +13,7 @@ class Solution:
         
  2. Thoughts
  (1). The line inside the while loop is very important. It categorizes the problems into two cases
- First： If there is only one element has most occurences, then every time we have idle_room -= rooms.pop //
+ First： If there is only one element has most occurences, then every time we have idle_room -= rooms.pop /
  
  Second: If there are two elements have most occurences, then the first time idle_room - max_freq. For example, if top two occurrences are A,B, n=2 //
  then
