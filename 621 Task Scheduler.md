@@ -14,6 +14,7 @@ class Solution:
  ```
  
  2. Thoughts
+ 
  (1). The line inside the while loop is very important. It categorizes the problems into two cases
  First： If there is only one element has most occurences, then every time we have idle_room -= rooms.pop /
  
