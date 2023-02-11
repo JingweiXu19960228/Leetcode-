@@ -1,5 +1,5 @@
 1. Right code
-
+```
 class Solution:
     def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
         intervals.sort(key = lambda x:x[1])
@@ -13,7 +13,10 @@ class Solution:
             else:
                 res+=1
         return res
-        
+```     
+
 2. Thoughts
-(1). Notice the extraodinary similarity of this problem to 452.  Minimum Number of Arrows to Burst Balloons
+3. 
+(1). Notice the extraodinary similarity of this problem to 452.  Minimum Number of Arrows to Burst Balloons.
+
 These two problems are kind of 'reversed'
