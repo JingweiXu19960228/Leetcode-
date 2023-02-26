@@ -24,7 +24,7 @@
 
         return count
         
-  ```      
+      ```      
         
   2. Thought
   (1).  The function dfs(n) would add all the nodes (that are connected to n) to 'visited'    
