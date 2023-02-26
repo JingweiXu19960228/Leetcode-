@@ -19,7 +19,9 @@ class Solution:
         res = []
         dfs('JFK')
         return res[::-1]
-        
+ ```  
+       
+       
  2. Thought
  
  (1). I cannot understand how the dfs function work  . Why the node 'dep' is added in the end ?
